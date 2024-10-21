@@ -1,0 +1,162 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('./../img/concurso\ de\ madres.png');
+    background-size: 75%; /* Ajusta la imagen para que cubra todo el fondo */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    height: 110vh; /* Hace que la altura del fondo sea el 100% de la ventana */
+}
+
+
+/* Estilos generales para la barra de navegación */
+.navbar h1 {
+    font-family: 'Arial', sans-serif;
+    font-weight: 600;
+}
+
+.navbar a {
+    font-family: 'Arial', sans-serif;
+    font-weight: 600;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ff9c9c;
+    padding: 10px 20px;
+    background: linear-gradient(to bottom, #ff9c9c, #e27b7bab); /* Degradado de rosa a azul pálido */
+    box-shadow: 0 4px 6px #00000044;
+    
+}
+
+.navbar .logo {
+    display: flex;
+    align-items: center;
+}
+
+.navbar img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    border-radius: 20px;
+}
+
+.navbar h1 {
+    font-size: 24px;
+    margin: 0;
+    color: white;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: rgb(245, 245, 245);
+    background-color: #ff9c9c;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #fce300;
+    transform: scale(1.05);
+}
+
+/* Estilos para las cards */
+.card {
+    border: 1px solid #ffffff00;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    background: linear-gradient(to bottom, #ff9c9c, #7e95aa); /* Degradado de rosa a azul pálido */
+    box-shadow: 0 4px 6px #00000044;
+    background-color: #ff9c9c;
+}
+
+.btn-primary {
+    text-decoration: none;
+    color: white; /* Color del texto */
+    background-color: #afafaf91; /* Cambia este valor al color deseado */
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: 700;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    border-color: rgba(255, 255, 255, 0);
+}
+
+.btn-primary:hover {
+    border-color: #02ecfd00;
+    background-color: #fd024d; /* Cambia el color al pasar el mouse */
+    transform: scale(1.05);
+}
+
+.titulo {
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center; /* Centra el texto */
+    margin: 50px; /* Elimina margen por defecto */
+    position: relative; /* Permite centrar usando transform */
+    color: rgb(255, 255, 255); /* Color del texto */
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7); /* Sombra negra suave */
+}
+
+.card-text {
+    color: rgb(255, 255, 255); /* Cambia a tu color preferido */
+    font-weight: bold; /* Aplica el estilo en negrita */
+}
+
+.highlight {
+    color: rgb(255, 12, 93); /* Cambia a tu color preferido */
+}
+
+/* estilos del footer*/
+
+footer {
+    background-color: #ff9c9c;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex; /* Cambia a flexbox */
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan si no hay espacio */
+    justify-content: space-between; /* Espacio entre los elementos */
+}
+
+ul.socials {
+    list-style-type: none;
+    padding: 0;
+    display: flex; /* Para que los enlaces estén en línea */
+}
+
+ul.socials li {
+    margin: 0 10px;
+}
+
+ul.socials li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+ul.socials li a:hover {
+    text-decoration: underline;
+}
+
+.location, .hours {
+    margin: 20px 0;
+    flex: 1; /* Para que ocupen el mismo espacio */
+    min-width: 150px; /* Asegura un ancho mínimo */
+}
+
+@media (max-width: 600px) {
+    .footer-content {
+        flex-direction: column; /* Cambia a columna en pantallas pequeñas */
+        align-items: center; /* Centra los elementos */
+    }
+}
